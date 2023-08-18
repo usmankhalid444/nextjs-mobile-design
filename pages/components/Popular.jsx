@@ -10,14 +10,14 @@ const Popular = () => {
       </p>
       <div className="flex flex-wrap mt-3">
         {services.map((service, index) => (
-          <span
+          <button
             key={index}
             className={`bg-[#E1F5FA] text-sm text-[#2E7887] hover:bg-[#bbdce3] rounded-2xl px-7 py-1.5 mb-2 ${
               index % 3 !== 2 ? "mr-2" : ""
             } ${index >= 3 ? "mt-2" : ""}`}
           >
             {service}
-          </span>
+          </button>
         ))}
       </div>
     </div>
